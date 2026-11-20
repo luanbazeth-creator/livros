@@ -1,0 +1,24 @@
+LIVRO DE PRINCESA — SITE PRONTO PARA O GITHUB PAGES
+
+As 4 fotos já estão colocadas EM ORDEM:
+  1) assets/foto-01.jpg — abraço/beijo na rua
+  2) assets/foto-02.jpg — selfie de vocês dois
+  3) assets/foto-03.jpg — beijo no rosto
+  4) assets/foto-04.jpg — foto no espelho
+
+COMO ABRIR
+Clique duas vezes no arquivo index.html.
+
+COMO PUBLICAR NO GITHUB PAGES
+1. Entre no repositório que já hospeda seu livro.
+2. Apague os arquivos antigos que usam Firebase, principalmente admin.html, admin.js, admin.css, firebase-public.js, firebase-config.js e quaisquer pastas antigas do site.
+3. Na raiz do repositório, envie index.html, style.css, script.js, config.js e a pasta assets INTEIRA.
+4. No GitHub, clique em Commit changes.
+5. Nas configurações Settings > Pages use Deploy from a branch, main, /(root) (se já estiver assim, não mude).
+6. Abra seu link e atualize com Ctrl+F5 para limpar arquivos antigos.
+
+Não precisa de Firebase, Supabase, login ou painel. É um site estático completo.
+Para editar frases depois, altere config.js.
+Para trocar qualquer foto mantendo a ordem, substitua o arquivo foto-01.jpg, foto-02.jpg, foto-03.jpg ou foto-04.jpg.
+
+OBSERVAÇÃO: se o seu site antigo estava dentro de public, no GitHub Pages os arquivos deste pacote devem ficar na raiz publicada, ao lado de index.html.

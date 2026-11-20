@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#21102f">
+  <meta name="description" content="Um livro encantado para contar a nossa história de amor.">
+  <title>Nosso Conto de Fadas ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="night-sky" aria-hidden="true"><div id="sky-stars"></div></div>
+  <main class="main-layout">
+    <section id="cover-screen" class="screen cover-screen" aria-label="Capa do nosso livro">
+      <div class="cover-presentation">
+        <p class="intro-overline">UM PRESENTE FEITO COM AMOR</p>
+        <div class="closed-book" id="closed-book">
+          <div class="cover-binding" aria-hidden="true"></div>
+          <div class="cover-lining" aria-hidden="true"></div>
+          <div class="book-cover">
+            <div class="cover-gold-frame" aria-hidden="true"></div>
+            <span class="cover-corner corner-tl" aria-hidden="true">❦</span>
+            <span class="cover-corner corner-tr" aria-hidden="true">❦</span>
+            <span class="cover-corner corner-bl" aria-hidden="true">❦</span>
+            <span class="cover-corner corner-br" aria-hidden="true">❦</span>
+            <div class="cover-top">
+              <div class="crown-mark" aria-hidden="true">♕</div>
+              <p class="cover-edition">EDIÇÃO ÚNICA • FEITA PARA VOCÊ</p>
+              <h1 class="cover-title"><span>Nosso</span><span>Conto de</span><em>Fadas</em></h1>
+              <div class="flourish" aria-hidden="true"><span>✧</span> ✦ <span>✧</span></div>
+            </div>
+            <div class="cover-portrait">
+              <img id="cover-main-image" src="assets/ilustracao-capa.webp" alt="Ilustração original de um casal de conto de fadas diante de um castelo ao entardecer">
+            </div>
+            <div class="cover-bottom">
+              <p id="cover-to" class="cover-dedication">Uma história só nossa</p>
+              <button id="open-book" class="cover-open-button" type="button"><span>Abrir nosso livro</span><span aria-hidden="true">›</span></button>
+              <p class="cover-footnote">e que a magia nunca termine ✨</p>
+            </div>
+          </div>
+        </div>
+        <p class="intro-hint"><span aria-hidden="true">✦</span> Toque na capa e descubra nossa história <span aria-hidden="true">✦</span></p>
+      </div>
+    </section>
+
+    <section id="reading-screen" class="screen reading-screen" aria-label="Livro de histórias" hidden>
+      <header class="reading-heading">
+        <div class="reading-badge">✦ NOSSA HISTÓRIA EM CADA PÁGINA ✦</div>
+        <h2 id="reading-book-title">Nosso livro de amor</h2>
+      </header>
+
+      <div class="reading-stage">
+        <div id="desktop-book" class="desktop-book" aria-label="Livro aberto com páginas que viram">
+          <div class="book-shadow" aria-hidden="true"></div>
+          <div class="book-inner">
+            <div class="book-left-base paper-base"><div class="endpaper-art"><span>❦</span><p>Era uma vez...</p><small>Um amor que virou história</small></div></div>
+            <div class="book-right-base paper-base"><div class="endpaper-art"><span>♡</span><p>Para sempre nós.</p><small>E o melhor ainda está por vir</small></div></div>
+            <div class="book-spine" aria-hidden="true"></div>
+            <div id="sheets-container"></div>
+          </div>
+        </div>
+        <div id="mobile-book" class="mobile-book" aria-label="Página do livro">
+          <div class="mobile-leaf-shadow" aria-hidden="true"></div>
+          <div id="mobile-page" class="mobile-page"></div>
+          <div id="mobile-flip" class="mobile-flip" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <nav class="book-navigation" aria-label="Navegação do livro">
+        <button id="prev-page" class="nav-button" type="button" aria-label="Voltar página"><span aria-hidden="true">←</span><span>Voltar</span></button>
+        <div class="page-progress" aria-live="polite">
+          <span class="progress-ornament">✦</span>
+          <span id="progress-text">Página 1</span>
+          <div class="progress-dots" id="progress-dots" aria-hidden="true"></div>
+        </div>
+        <button id="next-page" class="nav-button nav-button-next" type="button"><span>Próxima</span><span aria-hidden="true">→</span></button>
+      </nav>
+      <div class="reading-actions"><button id="back-to-cover" class="text-button" type="button">↶ Voltar para a capa</button><span class="mobile-swipe-tip">Deslize para virar a página</span></div>
+    </section>
+  </main>
+  <div id="heart-burst" aria-hidden="true"></div>
+</body>
+</html>
